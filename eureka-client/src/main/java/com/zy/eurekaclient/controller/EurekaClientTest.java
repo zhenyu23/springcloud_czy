@@ -18,7 +18,7 @@ public class EurekaClientTest {
 
     @GetMapping("/hi")
     public String getHome(@RequestParam String name){
-        return "hi"+name+"  port is:"+port;
+        return "hi！ "+name+"  port is:"+port;
     }
 
     @GetMapping("/testRest")
