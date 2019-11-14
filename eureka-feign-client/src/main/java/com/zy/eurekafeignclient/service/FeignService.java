@@ -1,6 +1,7 @@
 package com.zy.eurekafeignclient.service;
 
 import com.zy.eurekafeignclient.EurekaFeignClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class FeignService {
     EurekaFeignClient eurekaFeignClient;
 
+    @Autowired
     public FeignService(EurekaFeignClient eurekaFeignClient){
         this.eurekaFeignClient=eurekaFeignClient;
     }
