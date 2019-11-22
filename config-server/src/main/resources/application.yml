@@ -1,0 +1,33 @@
+server:
+  port: 8769
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#spring:
+#  application:
+#    name: config-server
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/shared
+#  profiles:
+#    active: native
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhenyu23/springcloud_czy
+          search-paths: respo
+          username: zhenyu23
+          password: c15700112305
+      label: master
+  application:
+    name: config-server
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
