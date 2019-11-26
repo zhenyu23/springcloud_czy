@@ -22,8 +22,8 @@ spring:
         git:
           uri: https://github.com/zhenyu23/springcloud_czy
           search-paths: respo
-          username: zhenyu23
-          password: c15700112305
+          username: ***
+          password: ****
       label: master
   application:
     name: config-server
